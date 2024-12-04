@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>서울시 공공도서관 검색 Mashup</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+    <style>
+      .centerd-div{
+        display: flex;
+        justify-content: center;
+      }
+      .custom-bg-even {
+        background-color: #F7BE81;
+      }
+      .custom-bg-odd {
+        background-color: #FAFAD2;
+      }
+    </style>
+</head>
+<body>
+    <p style="color: white;"> 실습과제 22-3 20217000053 윤주상</p>
+    <div class="container">
+      <div class="row mt-2">
+        <div id="cover_close" onclick="document.getElementById('cover_close').style.display='none';" style="cursor:pointer;">
+            <img src="images/bg_img.png" style="width: 100%; height: 100%; position: absolute; z-index: 5;">
+            <img src="images/fg_txt.png" style="text-align:center; width:70%; left:0%; position:absolute; z-index:5;">
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light centered-div">
+      <h3><b>서울시 공공도서관 정보조회 서비스</b></h3>
+    </nav>   
+        <select id="gu" class="form-select" aria-label="Default select example">
+            <option value="강남구">강남구</option>
+            <option value="강동구">강동구</option>
+            <option value="강북구">강북구</option>
+            <option value="강서구">강서구</option>
+            <option value="관악구">관악구</option>
+            <option value="광진구">광진구</option>
+            <option value="구로구">구로구</option>
+            <option value="금천구">금천구</option>
+            <option value="노원구">노원구</option>
+            <option value="도봉구">도봉구</option>
+            <option value="동대문구">동대문구</option>
+            <option value="동작구">동작구</option>
+            <option value="마포구">마포구</option>
+            <option value="서대문구">서대문구</option>
+            <option value="서초구">서초구</option>
+            <option value="성동구">성동구</option>
+            <option value="성북구">성북구</option>
+            <option value="송파구">송파구</option>
+            <option value="양천구">양천구</option>
+            <option value="영등포구">영등포구</option>
+            <option value="용산구">용산구</option>
+            <option value="은평구">은평구</option>
+            <option value="종로구">종로구</option>
+            <option value="중구">중구</option>
+            <option value="중랑구">중랑구</option>
+        </select>
+    <div style="text-align: center;">
+        <input class="btn btn-primary" onclick="find()", type="button" id="what" value="검색">
+    </div>
+  </div>
+    <div class="container">
+      <div class="row mt-2">
+        <div class="col-lg-6 mt-2">
+          <div id="map" style="height: 400px;"></div>
+        </div>
+        <div class="col-lg-6 mt-2">
+          <div id="libraries"></div>
+        </div>
+      </div>
+    </div>
+    <div><img src="images/up-arrow-icon.png" id="toTop" onclick="go_top()" style="z-index: 9;"></div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=091b4001eb912094e9f5bb7b70118865"></script>
+    <script src="script.js"></script>
+</body>
+</html>
