@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seoul Event Notifier</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <style>
-        .centered-div{
-            display: flex;
-            justify-content: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body> 
-    <p>실습과제 20-1_2021700053 윤주상</p>
-    <div class="container">
-        <nav class="navbar navbar-expand-sm bg-light navbar-light">
-            <a href="#" class="navbar-brand">
-                <img src="good.jpg" alt="logo" style="width: 40px;">
-            </a>
-            <h3 style="color: rgb(0,0,0);">서울특별시 행사 알리미</h3>
-        </nav>
-        <div class="row mt-2">
-            <select class="form-select" id="gu" aria-label="Default select example">
-                <option selected>공연 분야</option>
-                <option value="클래식">클래식</option>
-                <option value="콘서트">콘서트</option>
-                <option value="연극">연극</option>
-                <option value="뮤지컬/오페라">뮤지컬/오페라</option>
-                <option value="무용">무용</option>
-                <option value="축제-문화/예술">축제-문화/예술</option>
-                <option value="축제-기타">축제-기타</option>
-                <option value="전시/미술">전시/미술</option>
-                <option value="영화">영화</option>
-            </select>
+<body>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <!-- 첫 번째 카드 -->
+      <div class="project-card">
+        <img src="map-screenshot.png" alt="Air Pollution Inquiry" class="project-image">
+        <div class="project-content">
+          <h3>Air Pollution Inquiry Mashup</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lacus...</p>
+          <a href="project1/index.html" class="project-link">View Project</a>
         </div>
-        <div class="row mt-2">
-            <h5 style="text-align: center;">관람하고 싶은 공연 분야를 선택하고 검색 버튼을 누르세요.</h5>
+      </div>
+
+      <!-- 두 번째 카드 -->
+      <div class="project-card">
+        <img src="culture-event.png" alt="Seoul Cultural Events" class="project-image">
+        <div class="project-content">
+          <h3>Kakao Map을 이용한 서울시 공공도서관 검색 Mashup</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget efficitur...</p>
+          <a href="project2/index.html" class="project-link">View Project</a>
         </div>
-        <div style="text-align: center;">
-            <input type="button" class="btn btn-outline-primary" type="button" id="what"  value="검색">
-        </div>
-        <div id="dataDiv" class="d-flex flex-wrap mt-3 p-2 ustify-content-between centered-div"></div>
+      </div>
     </div>
-    <script src="script.js"></script>
+  </section>
+  <!-- 세 번째 카드 -->
+  <div class="project-card">
+    <img src="culture-event.png" alt="Seoul Cultural Events" class="project-image">
+    <div class="project-content">
+      <h3>서울시 문화행사 알리미</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget efficitur...</p>
+      <a href="project3/index.html" class="project-link">View Project</a>
+    </div>
+  </div>
+</div>
+</section>
+
 </body>
 </html>
